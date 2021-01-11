@@ -33,7 +33,7 @@ function setup() {
 function draw() {
   Engine.update(engine);
   rectMode(CENTER);
-  background(0);
+  background("lightblue");
   
  ground1.display();
   dustbin1.display();
@@ -45,7 +45,7 @@ function draw() {
 
 function keyPressed(){
   if(keyCode===UP_ARROW){
-      Matter.Body.applyForce(paper1.body,paper1.body.position,{x:80,y:-85});
+      Matter.Body.applyForce(paper1.body,paper1.body.position,{x:20,y:-75});
   }
 }
 
